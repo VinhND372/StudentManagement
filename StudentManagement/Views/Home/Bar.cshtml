@@ -1,0 +1,100 @@
+﻿@model List<StudentMarkDetails>
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<div class="text-center">
+    <h4 class="display-4">Biểu đồ cột thể hiện điểm số các môn học</h4>
+    <h3><a href="~/Home/Index">Quay lại</a></h3>
+    <div class="card">
+        <div class="card-header">
+            <div class="chart">
+                <canvas id="barchart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+<script>
+
+    var barCanvas = document.getElementById("barchart");
+
+    var Physics = [];
+    var Chemistry = [];
+    var Biology = [];
+    var Mathematics = [];
+
+    @if(Model.Count>0)
+    {
+        foreach(var item in Model)
+        {
+            @:Physics.push(@item.Physics);
+            @:Chemistry.push(@item.Chemistry);
+            @:Biology.push(@item.Biology);
+            @:Mathematics.push(@item.Mathematics);
+        }
+    }
+
+
+    var Physics = {
+        label: 'Vật lý',
+        data: Physics,
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderWidth: 0,
+        lineTension: 0,
+    };
+
+    var Chemistry = {
+        label: 'Hóa học',
+        data: Chemistry,
+        backgroundColor: 'rgb(54, 162, 235)',
+        borderWidth: 0,
+    };
+
+    var Biology = {
+        label: 'Sinh học',
+        data: Biology,
+        backgroundColor: 'rgb(157, 230, 41)',
+        borderWidth: 0,
+    };
+
+    var Mathematics = {
+        label: 'Toán',
+        data: Mathematics,
+        backgroundColor: 'rgb(41, 224, 230)',
+        borderWidth: 0,
+    };
+
+    var datasetvalues = {
+        labels: ["Vinh", "Hào", "Trung", "HIếu", "Lành", "Trang"],//x-axis label values
+        datasets: [Physics, Chemistry, Biology, Mathematics]//y-axis
+    };
+
+    var chartOptions = {
+        scales: {
+            xAxes: [{
+                barPercentage: 1,
+                categoryPercentage: 0.6,
+
+            }],
+            yAxes: [{
+                barPercentage: 1,
+                categoryPercentage: 0.6,
+                ticks: {
+                    beginAtZero: true
+                }
+            }],
+        }
+    };
+
+    var barChart = new Chart(barCanvas, {
+        type: 'bar',
+        data: datasetvalues,
+        options: chartOptions
+    });
+
+</script>

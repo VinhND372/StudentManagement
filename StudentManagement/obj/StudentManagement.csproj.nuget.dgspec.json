@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Toan\\source\\repos\\Charts-main\\StudentManagement\\StudentManagement.csproj": {}
+    "C:\\Users\\Toan\\Desktop\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Toan\\source\\repos\\Charts-main\\StudentManagement\\StudentManagement.csproj": {
+    "C:\\Users\\Toan\\Desktop\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Toan\\source\\repos\\Charts-main\\StudentManagement\\StudentManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Toan\\Desktop\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
         "projectName": "StudentManagement",
-        "projectPath": "C:\\Users\\Toan\\source\\repos\\Charts-main\\StudentManagement\\StudentManagement.csproj",
+        "projectPath": "C:\\Users\\Toan\\Desktop\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
         "packagesPath": "C:\\Users\\Toan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Toan\\source\\repos\\Charts-main\\StudentManagement\\obj\\",
+        "outputPath": "C:\\Users\\Toan\\Desktop\\StudentManagement\\StudentManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Toan\\AppData\\Roaming\\NuGet\\NuGet.Config",

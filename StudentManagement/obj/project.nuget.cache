@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Oc7ddMtFi9GGkSe2HSYXuxV9fvrPqsTrkAVHm6dvGIA7Mo0gux5gw51ulYW8BnBFWbhqAi1s8wmT4zOWXWGsUQ==",
+  "dgSpecHash": "bWaE+Ct8Er2vYuKv45nZhyl0312KMdLuzWmN/uvpvu/zF+i56ydJnTp3DVcDJ4fra6Kw5aOL92h3cN3Do51y+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Toan\\source\\repos\\Charts-main\\StudentManagement\\StudentManagement.csproj",
+  "projectFilePath": "C:\\Users\\Toan\\Desktop\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Toan\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Toan\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
